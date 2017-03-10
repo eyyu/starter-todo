@@ -43,6 +43,7 @@ class Tasks extends MY_Model {
 		        ['field' => 'task', 'label' => 'TODO task', 'rules' => 'alpha_numeric_spaces|max_length[64]'],
 		        ['field' => 'priority', 'label' => 'Priority', 'rules' => 'integer|less_than[4]'],
 		        ['field' => 'size', 'label' => 'Task size', 'rules' => 'integer|less_than[4]'],
+		        ['field' => 'status', 'label' => 'Task status', 'rules' => 'integer|less_than[3]'],
 		        ['field' => 'group', 'label' => 'Task group', 'rules' => 'integer|less_than[5]'],
 		    );
 		    return $config;
