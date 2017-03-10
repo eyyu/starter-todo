@@ -151,7 +151,7 @@ class Mtce extends Application
 	        'fpriority' => makeComboBox    ( 'Priority', 'priority', $task->priority, $priparms, "How important is this task?"),
 	        'fsize'     => makeTextField   ( 'Size ', 'size', $task->size, $priparms, "How long will it take?"),
 	        'fgroup'    => makeTextField   ( 'Group ', 'group', $task->group, $priparms, "What kinda of task?"),
-	        'fstatus'   => makeTextField   ( 'Status ', 'priority', $task->status, $priparms, "What is the status?"),
+	        'fstatus'   => makeTextField   ( 'Status ', 'status', $task->status, $priparms, "What is the status?"),
 	        'zsubmit'   => makeSubmitButton( 'Update the TODO task', "Click on home or <back> if you don't want to change anything!", 'btn-success'),
 	    );
 	    $this->data = array_merge($this->data, $fields);
